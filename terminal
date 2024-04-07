@@ -1,0 +1,102 @@
+Last login: Sun Apr  7 22:45:27 on ttys005
+lamaaltan@Turguts-MacBook-Pro ~ % mkdir learn_git
+
+mkdir: learn_git: File exists
+lamaaltan@Turguts-MacBook-Pro ~ % cd learn_git
+
+lamaaltan@Turguts-MacBook-Pro learn_git % touch third.txt
+
+lamaaltan@Turguts-MacBook-Pro learn_git % git init
+
+Reinitialized existing Git repository in /Users/lamaaltan/learn_git/.git/
+lamaaltan@Turguts-MacBook-Pro learn_git % git add third.txt
+
+lamaaltan@Turguts-MacBook-Pro learn_git % git commit -m "adding third.txt"
+
+[main 6d08fd8] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+lamaaltan@Turguts-MacBook-Pro learn_git % 
+lamaaltan@Turguts-MacBook-Pro learn_git % git log
+
+commit 6d08fd8df10e300ebabd899a19cf64a6b480bace (HEAD -> main)
+Author: lama halawa <lamahalawa26@gmail.com>
+Date:   Sun Apr 7 23:23:20 2024 +0200
+
+    adding third.txt
+
+commit ee6675adcbaf6466f93a03f38374e7d237c85f6d
+Author: lamaaltan <lamaaltan@gmail.com>
+Date:   Wed Dec 27 20:31:15 2023 +0200
+
+    removing third.txt
+
+commit f69ee890e9bd30d6153af6883c04e9998afea994
+Author: lamaaltan <lamaaltan@gmail.com>
+Date:   Wed Dec 27 20:28:19 2023 +0200
+
+    adding fourth.txt
+
+commit 6194ad0e24ac5940983518643572de9da0e9fa9b
+Author: lamaaltan <lamaaltan@gmail.com>
+Date:   Wed Dec 27 20:22:47 2023 +0200
+
+    adding third.txt
+lamaaltan@Turguts-MacBook-Pro learn_git % 
+lamaaltan@Turguts-MacBook-Pro learn_git % touch fourth.txt
+
+lamaaltan@Turguts-MacBook-Pro learn_git % git add fourth.txt
+
+lamaaltan@Turguts-MacBook-Pro learn_git % git commit -m "adding fourth.txt"
+
+On branch main
+nothing to commit, working tree clean
+lamaaltan@Turguts-MacBook-Pro learn_git % rm third.txt
+
+lamaaltan@Turguts-MacBook-Pro learn_git % git add .
+
+lamaaltan@Turguts-MacBook-Pro learn_git % git commit -m "removing third.txt"
+
+[main 93d1384] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+lamaaltan@Turguts-MacBook-Pro learn_git % git log
+
+commit 93d1384cabf7a2694b4e486993b96a9e08a5fbd3 (HEAD -> main)
+Author: lama halawa <lamahalawa26@gmail.com>
+Date:   Sun Apr 7 23:24:16 2024 +0200
+
+    removing third.txt
+
+commit 6d08fd8df10e300ebabd899a19cf64a6b480bace
+Author: lama halawa <lamahalawa26@gmail.com>
+Date:   Sun Apr 7 23:23:20 2024 +0200
+
+    adding third.txt
+
+commit ee6675adcbaf6466f93a03f38374e7d237c85f6d
+Author: lamaaltan <lamaaltan@gmail.com>
+Date:   Wed Dec 27 20:31:15 2023 +0200
+
+    removing third.txt
+
+commit f69ee890e9bd30d6153af6883c04e9998afea994
+Author: lamaaltan <lamaaltan@gmail.com>
+Date:   Wed Dec 27 20:28:19 2023 +0200
+
+    adding fourth.txt
+
+commit 6194ad0e24ac5940983518643572de9da0e9fa9b
+Author: lamaaltan <lamaaltan@gmail.com>
+Date:   Wed Dec 27 20:22:47 2023 +0200
+
+    adding third.txt
+lamaaltan@Turguts-MacBook-Pro learn_git % git config --global core.pager cat
+
+lamaaltan@Turguts-MacBook-Pro learn_git % git config --global --list
+
+user.name=lama halawa
+user.email=lamahalawa26@gmail.com
+core.pager=cat
+credential.helper=cache
+lamaaltan@Turguts-MacBook-Pro learn_git % 
